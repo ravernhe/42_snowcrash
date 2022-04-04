@@ -1,0 +1,16 @@
+Connection ssh vm : ssh levelXX@ip -p 4242 (ip:10.10.200.232 | ip a)
+Setup ssh :    https://www.youtube.com/watch?v=Y7KzV-Hl2bw
+
+README is an help
+
+Learn :
+GDB (Debuger)
+PCAP reader (cloudshark)
+John (Crack Passwords)
+Python Or Ruby scripts
+
+Level 1 & 2 :
+dcode.fr
+
+Rendu :
+touch flag && mkdir Ressources
