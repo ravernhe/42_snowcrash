@@ -1,7 +1,5 @@
-Pwd not working
+cat /etc/passwd
+- flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash <- This is not working as password
 
-So Search, cat /etc/passwrd
-- flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash <- Failure
-
-Use John the ripper with the passwrd line
+Use John the ripper with the password line
 You get : abcdefg
