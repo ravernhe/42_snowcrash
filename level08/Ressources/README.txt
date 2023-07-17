@@ -27,3 +27,5 @@ ln -s ~/token /tmp/paprika
 
 # IT'S FLAG TIME 🥵
 
+We connect to flag08 with this password and we can now getflag
+> 25749xKZ8L7DkSCwJkT9dyv6f
