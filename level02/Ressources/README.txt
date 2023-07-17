@@ -1,7 +1,5 @@
 ls -> level02.pcap
 
-# REFAIRE pour trainig Wireshark
-
 .pcap : pcap est une interface de programmation permettant de capturer un trafic réseau ("packet capture")
 
 Use Wireshark (Set Up VM) or CloudShark (Web Based Service)
